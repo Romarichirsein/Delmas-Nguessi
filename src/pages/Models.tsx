@@ -24,7 +24,7 @@ export default function Models() {
     }));
 
   return (
-    <div className="min-h-screen bg-luxury-black pb-20">
+    <div className="min-h-screen bg-bg-main pb-20">
       <HeroSection 
         subtitle="Lookbook Éditorial"
         title="Inspiration & Allure"
@@ -71,9 +71,9 @@ export default function Models() {
         </div>
 
         {/* Action Bottom */}
-        <div className="mt-32 p-16 bg-white/[0.02] backdrop-blur-2xl border border-white/10 text-center rounded-[3rem] relative overflow-hidden shadow-3xl">
+        <div className="mt-32 p-16 bg-bg-main/5 backdrop-blur-2xl border border-border-main text-center rounded-[3rem] relative overflow-hidden shadow-3xl">
           <div className="absolute inset-0 bg-gradient-to-tr from-luxury-red/10 to-transparent pointer-events-none" />
-          <h2 className="text-4xl font-serif mb-8 max-w-xl mx-auto">Votre vision mérite une réalisation d'exception.</h2>
+          <h2 className="text-4xl font-serif mb-8 max-w-xl mx-auto text-text-main">Votre vision mérite une réalisation d'exception.</h2>
           <Link to="/appointment">
             <Button variant="primary" size="lg" className="shadow-2xl">
               Prendre rendez-vous avec le styliste

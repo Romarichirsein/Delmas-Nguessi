@@ -154,7 +154,7 @@ export default function Workshops() {
                 </span>
               </div>
               
-              <h3 className="text-2xl font-serif mb-4 leading-tight text-text-main">{ws.title}</h3>
+              <h3 className="text-xl md:text-2xl font-serif mb-4 leading-tight text-text-main">{ws.title}</h3>
               <p className="text-sm text-text-main/40 mb-8 font-light leading-relaxed">{ws.desc}</p>
               
               <div className="space-y-4 mb-10 flex-grow">
@@ -201,7 +201,7 @@ export default function Workshops() {
         {/* Practical Info */}
         <section className="mt-32 p-12 bg-bg-main/5 backdrop-blur-2xl border border-border-main rounded-[3rem] grid grid-cols-1 md:grid-cols-2 gap-16 items-center shadow-3xl">
           <div className="space-y-6">
-            <h2 className="text-4xl font-serif text-text-main">{t.practicalTitle}</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-text-main">{t.practicalTitle}</h2>
             <p className="text-text-main/60 font-light leading-relaxed">
               {t.practicalDesc}
             </p>

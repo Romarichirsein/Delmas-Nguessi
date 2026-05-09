@@ -62,14 +62,14 @@ Merci de confirmer ma commande.`;
     // clearCart();
   };
 
-  const inputStyles = "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-luxury-gold outline-none transition-all placeholder:text-white/20";
+  const inputStyles = "w-full bg-bg-main/5 border border-border-main rounded-xl px-4 py-3 text-sm focus:border-luxury-gold outline-none transition-all placeholder:text-text-main/20 text-text-main";
 
   return (
-    <div className="min-h-screen bg-luxury-black pt-32 pb-20 px-4">
+    <div className="min-h-screen bg-bg-main pt-32 pb-20 px-4">
       <div className="max-w-5xl mx-auto">
         <button 
           onClick={() => navigate("/panier")}
-          className="flex items-center gap-2 text-white/50 hover:text-luxury-gold transition-colors mb-12 uppercase text-[10px] tracking-widest font-bold"
+          className="flex items-center gap-2 text-text-main/50 hover:text-luxury-gold transition-colors mb-12 uppercase text-[10px] tracking-widest font-bold"
         >
           <ChevronLeft size={16} /> Retour au panier
         </button>
@@ -82,8 +82,8 @@ Merci de confirmer ma commande.`;
             className="space-y-10"
           >
             <div>
-              <h1 className="text-4xl font-serif mb-4">Informations de Livraison</h1>
-              <p className="text-white/40 text-sm font-light">Veuillez remplir vos coordonnées pour que nous puissions organiser votre livraison ou essayage.</p>
+              <h1 className="text-4xl font-serif mb-4 text-text-main">Informations de Livraison</h1>
+              <p className="text-text-main/40 text-sm font-light">Veuillez remplir vos coordonnées pour que nous puissions organiser votre livraison ou essayage.</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -152,9 +152,9 @@ Merci de confirmer ma commande.`;
                 />
               </div>
 
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/5 flex gap-4 items-start">
+              <div className="bg-bg-main/5 p-6 rounded-2xl border border-border-main flex gap-4 items-start">
                  <Info className="text-luxury-gold shrink-0 mt-1" size={20} />
-                 <p className="text-[11px] text-white/50 leading-relaxed font-light italic">
+                 <p className="text-[11px] text-text-main/50 leading-relaxed font-light italic">
                    En cliquant sur "Confirmer," vous serez redirigé vers WhatsApp avec votre commande pré-remplie. Notre conseiller finalisera les modalités avec vous.
                  </p>
               </div>
@@ -166,35 +166,35 @@ Merci de confirmer ma commande.`;
           </motion.div>
 
           {/* Order Summary */}
-          <div className="lg:border-l lg:border-white/5 lg:pl-16">
-             <div className="sticky top-32 space-y-10">
-                <h2 className="text-2xl font-serif">Récapitulatif Articles</h2>
+          <div className="lg:border-l lg:border-border-main lg:pl-16">
+              <div className="sticky top-32 space-y-10">
+                <h2 className="text-2xl font-serif text-text-main">Récapitulatif Articles</h2>
                 
                 <div className="space-y-6 max-h-[400px] overflow-y-auto pr-4 custom-scrollbar">
                   {items.map((item, idx) => (
                     <div key={idx} className="flex gap-4">
-                      <div className="w-16 h-20 bg-neutral-900 rounded-lg overflow-hidden shrink-0">
+                      <div className="w-16 h-20 bg-bg-main/10 rounded-lg overflow-hidden shrink-0">
                         <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex-grow flex flex-col justify-center">
                         <h4 className="text-sm font-serif">{item.title}</h4>
-                        <p className="text-[10px] text-white/40 uppercase tracking-widest mt-1">Qté: {item.quantity} • {item.variant?.size}</p>
+                        <p className="text-[10px] text-text-main/40 uppercase tracking-widest mt-1">Qté: {item.quantity} • {item.variant?.size}</p>
                         <p className="text-sm font-mono text-luxury-gold mt-2">{formatPrice(item.price * item.quantity)}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-10 border-t border-white/5 space-y-4">
-                  <div className="flex justify-between text-sm uppercase tracking-widest text-white/40">
+                <div className="pt-10 border-t border-border-main space-y-4">
+                  <div className="flex justify-between text-sm uppercase tracking-widest text-text-main/40">
                     <span>Sous-total</span>
-                    <span className="text-white">{formatPrice(getTotalPrice())}</span>
+                    <span className="text-text-main">{formatPrice(getTotalPrice())}</span>
                   </div>
-                  <div className="flex justify-between text-sm uppercase tracking-widest text-white/40">
+                  <div className="flex justify-between text-sm uppercase tracking-widest text-text-main/40">
                     <span>Livraison</span>
                     <span className="text-luxury-gold">Gratuit</span>
                   </div>
-                  <div className="pt-6 border-t border-white/5 flex justify-between">
+                  <div className="pt-6 border-t border-border-main flex justify-between">
                     <span className="text-2xl font-serif">Total</span>
                     <span className="text-2xl font-mono text-luxury-gold">{formatPrice(getTotalPrice())}</span>
                   </div>

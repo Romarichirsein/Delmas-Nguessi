@@ -12,7 +12,7 @@ export default function Cart() {
 
   if (items.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-luxury-black pt-20">
+      <div className="min-h-screen flex items-center justify-center bg-bg-main pt-20">
         <div className="text-center max-w-md px-4">
           <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-8 border border-white/10">
             <ShoppingBag size={40} className="text-luxury-gold opacity-30" />
@@ -32,7 +32,7 @@ export default function Cart() {
   }
 
   return (
-    <div className="min-h-screen bg-luxury-black pt-32 pb-20">
+    <div className="min-h-screen bg-bg-main pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <header className="mb-12">
           <h1 className="text-5xl font-serif mb-2">Votre Sélection</h1>
@@ -50,7 +50,7 @@ export default function Cart() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  className="group relative flex gap-6 sm:gap-10 p-6 bg-neutral-950/40 border border-white/5 rounded-2xl"
+                  className="group relative flex gap-6 sm:gap-10 p-6 bg-bg-main/5 border border-border-main rounded-2xl"
                 >
                   <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-neutral-900 rounded-lg overflow-hidden shrink-0">
                     <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
@@ -107,13 +107,13 @@ export default function Cart() {
 
           {/* Order Summary */}
           <div className="lg:col-span-1">
-            <div className="sticky top-32 p-10 bg-neutral-900 border border-white/5 rounded-3xl space-y-8 shadow-2xl">
-              <h2 className="text-2xl font-serif border-b border-white/5 pb-6">Résumé du Panier</h2>
+            <div className="sticky top-32 p-10 bg-bg-main/5 border border-border-main rounded-3xl space-y-8 shadow-2xl">
+              <h2 className="text-2xl font-serif border-b border-border-main pb-6 text-text-main">Résumé du Panier</h2>
               
               <div className="space-y-4">
                 <div className="flex justify-between text-sm uppercase tracking-widest text-white/40">
                   <span>Sous-total</span>
-                  <span className="text-white">{formatPrice(getTotalPrice())}</span>
+                  <span className="text-text-main">{formatPrice(getTotalPrice())}</span>
                 </div>
                 <div className="flex justify-between text-sm uppercase tracking-widest text-white/40">
                   <span>Livraison (Yaoundé)</span>
@@ -132,11 +132,11 @@ export default function Cart() {
                    </Button>
                 </Link>
                 <div className="flex flex-col gap-3 text-center">
-                  <div className="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest text-white/30">
+                  <div className="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest text-text-main/30">
                     <ShieldCheck size={14} className="text-luxury-gold" />
                     Paiement sécurisé à la livraison
                   </div>
-                  <div className="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest text-white/30">
+                  <div className="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest text-text-main/30">
                     <CreditCard size={14} className="text-luxury-gold" />
                     Espèces / Mobile Money acceptés
                   </div>
@@ -145,7 +145,7 @@ export default function Cart() {
 
               <div className="bg-white/5 p-6 rounded-xl border border-white/5">
                 <h4 className="text-[10px] uppercase tracking-widest text-luxury-gold font-bold mb-2">Note Importante</h4>
-                <p className="text-[11px] text-white/50 leading-relaxed font-light italic">
+                <p className="text-[11px] text-text-main/50 leading-relaxed font-light italic">
                   La finalisation se fera via WhatsApp pour confirmer les détails de livraison et vos éventuelles mesures spécifiques.
                 </p>
               </div>

@@ -3,7 +3,7 @@ import { cn } from "@/src/lib/utils";
 import { motion } from "motion/react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "luxury";
+  variant?: "primary" | "secondary" | "outline" | "luxury" | "ghost";
   size?: "sm" | "md" | "lg";
   children?: React.ReactNode;
   className?: string;
@@ -21,10 +21,11 @@ export default function Button({
   const baseStyles = "inline-flex items-center justify-center font-medium transition-all focus:outline-none disabled:opacity-50 uppercase tracking-[0.2em] text-xs";
   
   const variants = {
-    primary: "bg-luxury-red text-white hover:bg-red-900 shadow-xl",
-    secondary: "bg-white text-luxury-black hover:bg-neutral-200 shadow-lg",
-    outline: "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black",
-    luxury: "bg-luxury-black border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-black",
+    primary: "bg-luxury-gold text-luxury-black hover:bg-white hover:text-luxury-black shadow-luxury-gold/20",
+    secondary: "bg-bg-main text-text-main border border-border-main hover:bg-luxury-gold hover:text-luxury-black shadow-lg",
+    outline: "border border-border-main text-text-main hover:bg-text-main hover:text-bg-main",
+    luxury: "bg-luxury-black text-luxury-gold hover:bg-luxury-gold hover:text-luxury-black border border-luxury-gold/30",
+    ghost: "text-text-main/60 hover:text-luxury-gold hover:bg-bg-main/5",
   };
 
   const sizes = {

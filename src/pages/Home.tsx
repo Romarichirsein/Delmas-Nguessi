@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Star, Quote, Award, MapPin, ShoppingBag as ShoppingBagIcon } from "lucide-react";
-import { mockProducts } from "@/src/lib/sanity";
+import { useProducts } from "@/src/context/useProducts";
 import ProductCard from "@/src/components/ui/ProductCard";
 import Button from "@/src/components/ui/Button";
 import { useSettings, translations } from "@/src/context/useSettings";
@@ -13,6 +13,7 @@ import QuickViewModal from "@/src/components/ui/QuickViewModal";
 export default function Home() {
   const { language } = useSettings();
   const navigate = useNavigate();
+  const { products } = useProducts();
   const [quickViewProduct, setQuickViewProduct] = React.useState<any>(null);
   const tForHero = translations[language].hero;
 
@@ -63,7 +64,7 @@ export default function Home() {
             <span className="inline-block text-luxury-gold text-xs uppercase tracking-[0.5em] mb-4 font-semibold italic">
               Maison de Couture Yaoundé
             </span>
-            <h1 className="text-6xl md:text-8xl font-serif text-text-main leading-tight mb-8">
+            <h1 className="text-4xl md:text-8xl font-serif text-text-main leading-tight mb-8">
               {tForHero.title.split(' ').map((word, i) => (
                 <span key={i} className="block overflow-hidden h-[1.1em]">
                   <motion.span
@@ -128,7 +129,7 @@ export default function Home() {
               className="lg:col-span-2 space-y-8"
             >
               <motion.span variants={itemVariants} className="text-luxury-gold text-xs uppercase tracking-[0.4em] font-bold block">Signature 2026</motion.span>
-              <motion.h2 variants={itemVariants} className="text-5xl font-serif italic text-text-main">L'Art de l'Indomptable</motion.h2>
+              <motion.h2 variants={itemVariants} className="text-3xl md:text-5xl font-serif italic text-text-main">L'Art de l'Indomptable</motion.h2>
               <motion.p variants={itemVariants} className="text-text-main/40 font-light leading-relaxed">
                 Notre nouvelle collection célèbre la femme moderne : forte, élégante et profondément connectée à ses racines. Des tissus structurés aux détails de dentelle délicats.
               </motion.p>
@@ -188,7 +189,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {mockProducts.filter(p => p.isFeatured).map((product, idx) => (
+            {products.filter(p => p.isFeatured).map((product, idx) => (
               <motion.div
                 key={product.id}
                 initial={{ opacity: 0, y: 40 }}
@@ -244,7 +245,7 @@ export default function Home() {
           
           <div className="space-y-10">
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-luxury-gold text-xs uppercase tracking-widest block font-bold">L'Univers Delmas</motion.span>
-            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} className="text-5xl font-serif leading-tight italic">{language === 'fr' ? 'Savoir-faire & Authenticité' : 'Craftsmanship & Authenticity'}</motion.h2>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} className="text-3xl md:text-5xl font-serif leading-tight italic">{language === 'fr' ? 'Savoir-faire & Authenticité' : 'Craftsmanship & Authenticity'}</motion.h2>
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-text-main/60 leading-relaxed text-lg font-light">
               {language === 'fr' 
                 ? "Située au cœur de Yaoundé (Bastos & Carrefour Nguessi), la maison Delmas Nguessi incarne le renouveau de la haute couture camerounaise. Nous marions les étoffes les plus nobles à des coupes architecturales qui magnifient chaque morphologie."
@@ -276,7 +277,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <span className="text-luxury-gold text-xs uppercase tracking-widest block mb-4 font-bold">{language === 'fr' ? "Nos Prestations d'Excellence" : "Our Excellence Services"}</span>
-            <h2 className="text-5xl font-serif italic text-text-main">{language === 'fr' ? "L'Art du Sur-Mesure" : "The Art of Bespoke"}</h2>
+            <h2 className="text-3xl md:text-5xl font-serif italic text-text-main">{language === 'fr' ? "L'Art du Sur-Mesure" : "The Art of Bespoke"}</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -331,7 +332,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-            <h2 className="text-5xl md:text-8xl font-serif mb-12 leading-tight italic">
+            <h2 className="text-4xl md:text-8xl font-serif mb-12 leading-tight italic text-white">
               {language === 'fr' ? 'Sublimez votre élégance' : 'Elevate your elegance'}
             </h2>
             <p className="text-white/80 mb-12 text-lg font-light max-w-xl mx-auto leading-relaxed">

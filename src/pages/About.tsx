@@ -118,7 +118,7 @@ export default function About() {
             className="space-y-8"
           >
             <span className="text-luxury-gold text-xs uppercase tracking-[0.4em] mb-4 block font-bold">{t.spiritTag}</span>
-            <h1 className="text-6xl md:text-7xl font-serif mb-6 leading-tight text-text-main">{t.mainTitle}</h1>
+            <h1 className="text-4xl md:text-7xl font-serif mb-6 leading-tight text-text-main">{t.mainTitle}</h1>
             <p className="text-text-main/60 leading-relaxed text-xl font-light">
               {t.spiritDesc1}
             </p>
@@ -147,7 +147,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
            <div className="max-w-xl">
              <span className="text-luxury-gold text-[10px] uppercase tracking-widest font-bold block mb-4">{t.artTag}</span>
-             <h2 className="text-5xl font-serif text-text-main">{t.processTitle}</h2>
+             <h2 className="text-3xl md:text-5xl font-serif text-text-main">{t.processTitle}</h2>
            </div>
            <p className="text-text-main/40 max-w-sm text-sm font-light leading-relaxed">
              {t.processDesc}
@@ -183,7 +183,7 @@ export default function About() {
       {/* Ateliers Presentation */}
       <section className="py-32 max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-serif mb-4 italic text-text-main">{t.sanctuaryTitle}</h2>
+          <h2 className="text-3xl md:text-5xl font-serif mb-4 italic text-text-main">{t.sanctuaryTitle}</h2>
           <p className="text-text-main/40 text-sm max-w-xl mx-auto uppercase tracking-widest">{t.city}</p>
         </div>
 
@@ -208,7 +208,7 @@ export default function About() {
 
       {/* Final Call */}
       <section className="py-32 bg-luxury-red text-center">
-         <h2 className="text-4xl font-serif mb-10 max-w-2xl mx-auto text-white">{t.finalTitle}</h2>
+         <h2 className="text-2xl md:text-4xl font-serif mb-10 max-w-2xl mx-auto text-white">{t.finalTitle}</h2>
          <Button variant="secondary" size="lg" className="bg-white text-luxury-red hover:bg-white/90 border-none px-12 h-16" onClick={() => navigate('/contact')}>{t.contactBtn}</Button>
       </section>
     </div>

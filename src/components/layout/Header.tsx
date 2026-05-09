@@ -30,7 +30,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex flex-col">
           <span className="text-2xl font-serif tracking-widest text-luxury-gold leading-none">DELMAS</span>
-          <span className={cn("text-[10px] tracking-[0.3em] opacity-70", theme === 'dark' ? 'text-white' : 'text-luxury-black')}>NGUESSI</span>
+          <span className={cn("text-[10px] tracking-[0.3em] opacity-70", theme === 'dark' ? 'text-text-main/40' : 'text-luxury-black')}>NGUESSI</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -90,7 +90,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-20 left-0 w-full bg-luxury-black border-b border-white/10 lg:hidden"
+            className="absolute top-20 left-0 w-full bg-bg-main border-b border-border-main lg:hidden"
           >
             <nav className="flex flex-col p-8 gap-6 bg-bg-main border-b border-border-main">
               {navLinks.map((link) => (

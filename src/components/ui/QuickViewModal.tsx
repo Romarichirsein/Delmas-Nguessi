@@ -68,18 +68,18 @@ export default function QuickViewModal({ product, isOpen, onClose }: QuickViewMo
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-bg-main/80 backdrop-blur-md"
+            className="absolute inset-0 bg-bg-main/60 backdrop-blur-xl"
           />
           
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="relative w-full max-w-4xl bg-bg-main border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row"
+            className="relative w-full max-w-4xl bg-bg-main border border-border-main/50 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row"
           >
             <button 
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 bg-bg-main/50 backdrop-blur-md border border-white/10 rounded-full text-text-main hover:bg-luxury-gold hover:text-bg-main transition-all"
+              className="absolute top-4 right-4 z-10 p-2 bg-bg-main/50 backdrop-blur-md border border-border-main/50 rounded-full text-text-main hover:bg-luxury-gold hover:text-luxury-black transition-all"
             >
               <X size={20} />
             </button>
@@ -105,8 +105,8 @@ export default function QuickViewModal({ product, isOpen, onClose }: QuickViewMo
                 {formatPrice(product.price)}
               </p>
               
-              <div className="prose prose-invert mb-8">
-                <p className="text-text-main/60 text-sm leading-relaxed font-light line-clamp-4">
+              <div className="mb-8">
+                <p className="text-text-main/70 text-sm leading-relaxed font-light line-clamp-4">
                   {product.description}
                 </p>
               </div>
@@ -121,7 +121,7 @@ export default function QuickViewModal({ product, isOpen, onClose }: QuickViewMo
                       <div 
                         key={color} 
                         style={{ backgroundColor: color }} 
-                        className="w-4 h-4 rounded-full border border-white/10"
+                        className="w-4 h-4 rounded-full border border-border-main/50"
                       />
                     ))}
                   </div>
@@ -135,11 +135,11 @@ export default function QuickViewModal({ product, isOpen, onClose }: QuickViewMo
                 
                 <div className="grid grid-cols-2 gap-4">
                   <Link to={`/produit/${product.slug}`} className="block">
-                    <Button variant="outline" className="w-full gap-2 border-white/10 text-text-main hover:border-luxury-gold">
+                    <Button variant="outline" className="w-full gap-2 border-border-main/50 text-text-main hover:border-luxury-gold">
                       <ArrowRight size={16} /> {t.viewFull}
                     </Button>
                   </Link>
-                  <Button onClick={handleWhatsApp} variant="luxury" className="w-full gap-2 border-white/10">
+                  <Button onClick={handleWhatsApp} variant="luxury" className="w-full gap-2 border-border-main/50">
                     <MessageSquare size={16} /> {t.contact}
                   </Button>
                 </div>

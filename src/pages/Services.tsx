@@ -90,7 +90,7 @@ export default function Services() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="/images/474843510_588544520605261_223940177265882897_n.jpg"
+        image="/images/592414871_820411847418526_8779992772699709020_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">
@@ -109,9 +109,9 @@ export default function Services() {
               <div className={i % 2 !== 0 ? "lg:order-2" : ""}>
                 <div className="aspect-[4/3] bg-bg-main/5 backdrop-blur-xl border border-border-main relative overflow-hidden group shadow-2xl rounded-3xl">
                   <img 
-                    src={i === 0 ? '/images/474811985_588546250605088_7047240369248446979_n.jpg' : i === 1 ? '/images/474878205_588541880605525_5744955745811776735_n.jpg' : i === 2 ? '/images/475133649_588542380605475_1079549339794125740_n.jpg' : '/images/651754294_900705899389120_1130377440611785196_n.jpg'}
+                    src={i === 0 ? '/images/651754294_900705899389120_1130377440611785196_n.jpg' : i === 1 ? '/images/653703565_900705679389142_1339018922596775200_n.jpg' : i === 2 ? '/images/672096917_923607353765641_6568980255686116601_n.jpg' : '/images/672378364_923607300432313_1178500142916908029_n.jpg'}
                     alt={service.title}
-                    className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg-main to-transparent" />
                   <div className="absolute bottom-10 left-10 text-luxury-gold">
@@ -121,15 +121,15 @@ export default function Services() {
               </div>
 
               <div className="space-y-8">
-                <h2 className="text-4xl font-serif group-hover:text-luxury-gold text-text-main">{service.title}</h2>
-                <p className="text-text-main/60 leading-relaxed font-light text-lg">
+                <h2 className="text-3xl md:text-4xl font-serif group-hover:text-luxury-gold text-text-main transition-colors">{service.title}</h2>
+                <p className="text-text-main/70 leading-relaxed font-light text-lg">
                   {service.description}
                 </p>
                 <div className="space-y-4">
                   <h4 className="text-[10px] uppercase tracking-widest text-luxury-gold font-bold">{t.process}</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {service.steps.map((step, idx) => (
-                      <div key={idx} className="flex items-center gap-3 text-sm text-text-main/50">
+                      <div key={idx} className="flex items-center gap-3 text-sm text-text-main/60">
                         <div className="w-1.5 h-1.5 bg-luxury-gold rounded-full" />
                         {step}
                       </div>
@@ -161,7 +161,7 @@ export default function Services() {
           <h2 className="text-3xl font-serif mb-8 italic text-text-main">{t.ctaTitle}</h2>
           <div className="flex flex-wrap justify-center gap-6">
             <Link to="/appointment">
-              <Button variant="secondary" size="lg" className="bg-bg-main text-text-main hover:bg-luxury-gold hover:text-bg-main border-border-main">{t.ctaBastos}</Button>
+              <Button variant="secondary" size="lg" className="bg-bg-main text-text-main hover:bg-luxury-gold hover:text-luxury-black border-border-main">{t.ctaBastos}</Button>
             </Link>
             <Link to="/appointment">
               <Button variant="outline" size="lg" className="border-border-main text-text-main hover:bg-text-main hover:text-bg-main">{t.ctaNguessi}</Button>

@@ -125,7 +125,7 @@ export default function QuoteForm() {
         </div>
 
         <div className="md:col-span-2 pt-6">
-          <Button type="submit" variant="primary" size="lg" className="w-full h-16 gap-3 bg-luxury-gold text-bg-main hover:bg-luxury-gold/90 border-none">
+          <Button type="submit" variant="primary" size="lg" className="w-full h-16 gap-3 bg-luxury-gold text-luxury-black hover:bg-luxury-gold/90 border-none font-bold">
             {t.submit} <Send size={18} />
           </Button>
           <p className="text-[10px] uppercase tracking-widest text-center mt-6 text-text-main/30">

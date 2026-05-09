@@ -28,7 +28,7 @@ export default function AdvancedSearch() {
   });
 
   return (
-    <div className="min-h-screen bg-luxury-black pb-20">
+    <div className="min-h-screen bg-bg-main pb-20">
       <HeroSection 
         subtitle="Conciergerie Digitale"
         title="Trouvez votre Look"
@@ -43,11 +43,11 @@ export default function AdvancedSearch() {
             <div>
               <h2 className="text-3xl font-serif mb-8 text-luxury-gold">Recherche Avancée</h2>
               <div className="relative mb-8">
-                <SearchIcon size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
+                <SearchIcon size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-main/30" />
                 <input 
                   type="text" 
                   placeholder="Inspiration, matière..."
-                  className="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-sm focus:border-luxury-gold outline-none transition-all"
+                  className="w-full bg-bg-main/5 border border-border-main rounded-xl py-4 pl-12 pr-4 text-sm focus:border-luxury-gold outline-none transition-all text-text-main"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                 />
@@ -56,7 +56,7 @@ export default function AdvancedSearch() {
 
             <div className="space-y-10">
               <div>
-                <h4 className="text-[10px] uppercase tracking-widest font-bold text-white/30 mb-6 flex items-center gap-2">
+                <h4 className="text-[10px] uppercase tracking-widest font-bold text-text-main/30 mb-6 flex items-center gap-2">
                   <SlidersHorizontal size={14} className="text-luxury-gold" /> Occasion
                 </h4>
                 <div className="space-y-3">
@@ -71,9 +71,9 @@ export default function AdvancedSearch() {
                       />
                       <div className={cn(
                         "w-4 h-4 rounded-full border transition-all flex items-center justify-center",
-                        selectedOccasion === occ ? "border-luxury-gold bg-luxury-gold" : "border-white/20 group-hover:border-white/50"
+                        selectedOccasion === occ ? "border-luxury-gold bg-luxury-gold" : "border-border-main group-hover:border-text-main/50"
                       )} />
-                      <span className={cn("text-xs transition-colors", selectedOccasion === occ ? "text-white" : "text-white/40 group-hover:text-white/60")}>
+                      <span className={cn("text-xs transition-colors", selectedOccasion === occ ? "text-text-main font-bold" : "text-text-main/40 group-hover:text-text-main/60")}>
                         {occ}
                       </span>
                     </label>
@@ -120,7 +120,7 @@ export default function AdvancedSearch() {
               <Button 
                 variant="outline" 
                 size="sm" 
-                className="w-full text-white/40"
+                className="w-full text-text-main/40 border-border-main"
                 onClick={() => {
                   setSelectedOccasion("");
                   setSelectedCut("");
@@ -135,23 +135,23 @@ export default function AdvancedSearch() {
 
           {/* Results Area */}
           <div className="lg:col-span-3">
-             <div className="flex justify-between items-center mb-12 border-b border-white/5 pb-6">
-                <p className="text-white/40 text-xs uppercase tracking-widest">{results.length} Résultats trouvés</p>
-                <div className="flex items-center gap-2 bg-white/5 p-1 rounded-lg">
+              <div className="flex justify-between items-center mb-12 border-b border-border-main pb-6">
+                <p className="text-text-main/40 text-xs uppercase tracking-widest">{results.length} Résultats trouvés</p>
+                <div className="flex items-center gap-2 bg-bg-main/5 p-1 rounded-lg">
                   <button 
                     onClick={() => setViewMode("grid")}
-                    className={cn("p-2 transition-all rounded", viewMode === "grid" ? "bg-luxury-gold text-black" : "text-white/40 hover:text-white")}
+                    className={cn("p-2 transition-all rounded", viewMode === "grid" ? "bg-luxury-gold text-luxury-black" : "text-text-main/40 hover:text-text-main")}
                   >
                     <Grid size={18} />
                   </button>
                   <button 
                     onClick={() => setViewMode("list")}
-                    className={cn("p-2 transition-all rounded", viewMode === "list" ? "bg-luxury-gold text-black" : "text-white/40 hover:text-white")}
+                    className={cn("p-2 transition-all rounded", viewMode === "list" ? "bg-luxury-gold text-luxury-black" : "text-text-main/40 hover:text-text-main")}
                   >
                     <LayoutList size={18} />
                   </button>
                 </div>
-             </div>
+              </div>
 
              {results.length > 0 ? (
                <div className={cn(

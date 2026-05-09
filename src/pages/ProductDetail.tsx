@@ -182,7 +182,7 @@ export default function ProductDetail() {
               <span className="text-luxury-gold text-xs uppercase tracking-[0.4em] font-semibold mb-4 block">
                 {product.category}
               </span>
-              <h1 className="text-5xl font-serif mb-4 leading-tight text-text-main">{product.title}</h1>
+              <h1 className="text-3xl md:text-5xl font-serif mb-4 leading-tight text-text-main">{product.title}</h1>
               <p className="text-2xl font-mono text-luxury-gold">{formatPrice(product.price)}</p>
             </div>
 
@@ -201,7 +201,7 @@ export default function ProductDetail() {
                       className={cn(
                         "py-3 border text-xs uppercase tracking-widest transition-all rounded-lg",
                         selectedSize === size 
-                          ? "border-luxury-gold bg-luxury-gold text-bg-main font-bold" 
+                          ? "border-luxury-gold bg-luxury-gold text-luxury-black font-bold" 
                           : "border-border-main hover:border-text-main/30 text-text-main/60"
                       )}
                     >
@@ -258,7 +258,7 @@ export default function ProductDetail() {
                         <span className="px-4 font-mono text-text-main">{quantity}</span>
                         <button onClick={() => setQuantity(quantity + 1)} className="p-2 hover:text-luxury-gold text-text-main">+</button>
                       </div>
-                      <Button onClick={handleAddToCart} variant="secondary" className="flex-grow gap-2 h-14 bg-bg-main text-text-main hover:bg-luxury-gold hover:text-bg-main border-border-main">
+                      <Button onClick={handleAddToCart} variant="secondary" className="flex-grow gap-2 h-14 bg-bg-main text-text-main hover:bg-luxury-gold hover:text-luxury-black border-border-main">
                         <ShoppingCart size={20} /> {t.addCart}
                       </Button>
                     </div>

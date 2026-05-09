@@ -33,7 +33,7 @@ export default function HeroSection({ subtitle, title, description, image }: Her
           <span className="text-luxury-gold text-xs uppercase tracking-[0.4em] font-bold block mb-4 italic">
             {subtitle}
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 leading-tight italic text-text-main">
+          <h1 className="text-3xl md:text-7xl lg:text-8xl font-serif mb-6 leading-tight italic text-text-main">
             {title}
           </h1>
           <p className="text-text-main/60 text-lg font-light leading-relaxed max-w-xl">
