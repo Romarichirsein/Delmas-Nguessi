@@ -29,7 +29,7 @@ export default function Models() {
         subtitle="Lookbook Éditorial"
         title="Inspiration & Allure"
         description="Plongez dans l'univers créatif de la maison Delmas Nguessi. Chaque cliché capture l'essence d'une coupe, le mouvement d'un tissu et la puissance d'une silhouette magnifiée."
-        image="https://images.unsplash.com/photo-1539109132304-351ed1bd993b?auto=format&fit=crop&q=80&w=2000"
+        image="/images/475277773_586964890763224_1335059651832504129_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">

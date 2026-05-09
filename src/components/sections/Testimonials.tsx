@@ -10,28 +10,28 @@ const testimonials_content = {
       role: "Cliente Satisfaite (Mariage)",
       content: "Une robe qui a fait sensation. Delmas a su transformer mon rêve en une réalité textile époustouflante. Merci pour ce chef-d'œuvre !",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/592552627_820411817418529_4280650793380733567_n.jpg"
     },
     {
       name: "Mr. Jean-Paul K.",
       role: "Client Business (Haute Couture)",
       content: "Le sur-mesure de Delmas Nguessi est d'une précision chirurgicale. Les finitions main sont exceptionnelles. Un grand bravo pour le professionnalisme.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/487211097_627899290003117_8024675177013790790_n.jpg"
     },
     {
       name: "Mme. Sandrine M.",
       role: "Partenaire Corporate",
       content: "J'apprécie énormément le conseil en image. Delmas ne se contente pas de coudre, il construit une identité visuelle forte pour ses clientes.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/475440036_588546137271766_3165901632500312932_n.jpg"
     },
     {
       name: "Pascal T.",
       role: "Expert Mode (Yaoundé)",
       content: "Une maison d'exception qui allie tradition et modernité avec brio. La qualité des étoffes et le savoir-faire artisanal sont sans égal au Cameroun.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/491351665_642674278525618_2080522259043292705_n.jpg"
     }
   ],
   en: [
@@ -40,28 +40,28 @@ const testimonials_content = {
       role: "Satisfied Client (Wedding)",
       content: "A dress that made a sensation. Delmas knew how to transform my dream into a breathtaking textile reality. Thank you for this masterpiece!",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/491251210_642674308525615_2770263850208036562_n.jpg"
     },
     {
       name: "Mr. Jean-Paul K.",
       role: "Business Client (Haute Couture)",
       content: "Delmas Nguessi's custom-made service is of surgical precision. The hand finishes are exceptional. A big well done for the professionalism.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/490551123_642674301858949_6885909393396440090_n.jpg"
     },
     {
       name: "Mrs. Sandrine M.",
       role: "Corporate Partner",
       content: "I really appreciate the image advice. Delmas doesn't just sew; he builds a strong visual identity for his clients.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/653700669_900705936055783_7657916468470584551_n.jpg"
     },
     {
       name: "Pascal T.",
       role: "Fashion Expert (Yaoundé)",
       content: "An exceptional house that brilliantly combines tradition and modernity. The quality of the fabrics and the artisanal craftsmanship are second to none in Cameroon.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200"
+      avatar: "/images/481285446_610443048415408_7386414886062726086_n.jpg"
     }
   ]
 };

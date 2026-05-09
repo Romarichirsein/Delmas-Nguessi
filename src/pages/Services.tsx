@@ -90,7 +90,7 @@ export default function Services() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=2000"
+        image="/images/474843510_588544520605261_223940177265882897_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">
@@ -109,7 +109,7 @@ export default function Services() {
               <div className={i % 2 !== 0 ? "lg:order-2" : ""}>
                 <div className="aspect-[4/3] bg-bg-main/5 backdrop-blur-xl border border-border-main relative overflow-hidden group shadow-2xl rounded-3xl">
                   <img 
-                    src={`https://images.unsplash.com/photo-${i === 0 ? '1548142813-c348350df52b' : i === 1 ? '1490481651871-ab68de25d43d' : i === 2 ? '1539109132304-351ed1bd993b' : '1509631179647-0177331693ae'}`}
+                    src={i === 0 ? '/images/474811985_588546250605088_7047240369248446979_n.jpg' : i === 1 ? '/images/474878205_588541880605525_5744955745811776735_n.jpg' : i === 2 ? '/images/475133649_588542380605475_1079549339794125740_n.jpg' : '/images/651754294_900705899389120_1130377440611785196_n.jpg'}
                     alt={service.title}
                     className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
                   />

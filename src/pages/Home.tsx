@@ -46,7 +46,7 @@ export default function Home() {
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2000" 
+            src="/images/592414871_820411847418526_8779992772699709020_n.jpg" 
             alt="Haute Couture Background" 
             className="w-full h-full object-cover opacity-60"
           />
@@ -145,7 +145,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="aspect-[3/4] bg-white/[0.03] backdrop-blur-xl border border-white/10 overflow-hidden relative group rounded-3xl shadow-2xl"
               >
-                <img src="https://images.unsplash.com/photo-1539109132304-351ed1bd993b?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src="/images/494204651_653399494119763_3283082856637455345_n.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
               </motion.div>
               <motion.div 
@@ -154,7 +154,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="aspect-[3/4] bg-white/[0.03] backdrop-blur-xl border border-white/10 overflow-hidden relative group mt-12 rounded-3xl shadow-2xl"
               >
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src="/images/554096409_765712162888495_3636194478930008749_n.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
               </motion.div>
             </div>
@@ -223,7 +223,7 @@ export default function Home() {
               className="w-full h-full rounded-[2rem] overflow-hidden shadow-2xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1549497538-301288c8541a?auto=format&fit=crop&q=80&w=1000" 
+                src="/images/486248762_626382453488134_3237831973051617764_n.jpg" 
                 alt="Tailoring" 
                 className="w-full h-full object-cover"
               />
@@ -323,7 +323,7 @@ export default function Home() {
       {/* CTA Final */}
       <section className="py-40 bg-luxury-red relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-           <img src="https://images.unsplash.com/photo-1549497538-301288c8541a?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover" />
+           <img src="/images/524702755_717584267701285_4222307855655821772_n.jpg" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <motion.div

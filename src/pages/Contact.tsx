@@ -81,7 +81,7 @@ export default function Contact() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&q=80&w=2000"
+        image="/images/653703565_900705679389142_1339018922596775200_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">

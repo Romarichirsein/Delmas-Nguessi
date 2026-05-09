@@ -76,7 +76,7 @@ export default function Catalog() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="https://images.unsplash.com/photo-1445205170230-053b830c6046?auto=format&fit=crop&q=80&w=2000"
+        image="/images/497517940_663880973071615_2558727842565097558_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4 py-12">

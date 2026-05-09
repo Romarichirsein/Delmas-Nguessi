@@ -107,7 +107,7 @@ export default function About() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&q=80&w=2000"
+        image="/images/653703364_902944365831940_4108709589071447332_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">
@@ -129,7 +129,7 @@ export default function About() {
 
           <div className="relative aspect-[3/4] bg-bg-main/5 border border-border-main overflow-hidden group rounded-3xl">
             <img 
-              src="https://images.unsplash.com/photo-1549497538-301288c8541a?auto=format&fit=crop&q=80&w=1200" 
+              src="/images/672096917_923607353765641_6568980255686116601_n.jpg" 
               alt="Delmas Nguessi Stylist" 
               className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
             />

@@ -33,7 +33,7 @@ export default function AdvancedSearch() {
         subtitle="Conciergerie Digitale"
         title="Trouvez votre Look"
         description="Utilisez nos filtres avancés pour dénicher la pièce parfaite adaptée à votre morphologie, à l'occasion ou à votre style de prédilection."
-        image="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2000"
+        image="/images/497517940_663880973071615_2558727842565097558_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">

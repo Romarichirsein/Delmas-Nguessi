@@ -131,7 +131,7 @@ export default function Workshops() {
         subtitle={t.subtitle}
         title={t.title}
         description={t.description}
-        image="https://images.unsplash.com/photo-1549497538-301288c8541a?auto=format&fit=crop&q=80&w=2000"
+        image="/images/653704609_902944419165268_873491369390833829_n.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4">

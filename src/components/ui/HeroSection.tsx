@@ -16,7 +16,7 @@ export default function HeroSection({ subtitle, title, description, image }: Her
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5 }}
-          src={image || "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=2000"} 
+          src={image || "/images/486192177_626382383488141_7325554881521288092_n.jpg"} 
           className="w-full h-full object-cover opacity-40 shadow-2xl"
           alt={title}
         />
