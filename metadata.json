@@ -1,0 +1,13 @@
+{
+  "name": "Delmas Nguessi",
+  "description": "Maison de haute couture camerounaise à Yaoundé. Élégance, sur-mesure et prêt-à-porter de luxe.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "E-commerce",
+    "Headless CMS",
+    "Multilingual"
+  ]
+}

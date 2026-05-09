@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --luxury-black: #0A0A0A;
+  --luxury-red: #991B1B;
+  --luxury-gold: #D4AF37;
+  --luxury-gold-vibrant: #FFD700;
+  --luxury-gray: #737373;
+  
+  --bg-main: #FFFFFF;
+  --text-main: #0A0A0A;
+  --border-main: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --bg-main: #0A0A0A;
+  --text-main: #FFFFFF;
+  --border-main: rgba(255, 255, 255, 0.1);
+}
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Outfit", sans-serif;
+
+  --color-luxury-black: var(--luxury-black);
+  --color-luxury-red: var(--luxury-red);
+  --color-luxury-gold: var(--luxury-gold);
+  --color-luxury-gold-vibrant: var(--luxury-gold-vibrant);
+  --color-luxury-gray: var(--luxury-gray);
+  
+  --color-bg-main: var(--bg-main);
+  --color-text-main: var(--text-main);
+  --color-border-main: var(--border-main);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-main text-text-main font-sans antialiased selection:bg-luxury-gold selection:text-luxury-black transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-luxury-gray);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-gold);
+}
+
+/* Animation for the gold border hover effect */
+@keyframes borderRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-gold-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-gold-border::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    var(--color-luxury-gold),
+    transparent 30%
+  );
+  animation: borderRotate 4s linear infinite;
+  z-index: 0;
+}
